@@ -1,0 +1,100 @@
+.container {
+  padding: 6.0625rem 1.5rem 3.875rem 1.5rem;
+  /* position: relative; */
+}
+
+.grid > :last-child {
+  margin-bottom: 0;
+}
+
+.job {
+  background-color: var(--secondary-bg);
+  padding: 3.0625rem 0.5625rem 2rem 2rem;
+  border-radius: 6px;
+  margin-bottom: 3.0625rem;
+  position: relative;
+}
+
+.logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1.5625rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.top span {
+  color: var(--job-info);
+  line-height: 1rem;
+}
+
+.dot {
+  background-color: var(--job-info);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.job h2 {
+  color: var(--job-header);
+  font-size: 1.25rem;
+  margin-bottom: 17px;
+  cursor: pointer;
+}
+
+.company {
+  color: var(--job-info);
+  display: block;
+  margin-bottom: 2.75rem;
+}
+
+.location {
+  color: var(--clr-violet);
+  font-weight: 700;
+}
+
+.load {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.load button {
+  background-color: var(--clr-violet);
+  color: var(--clr-white);
+  width: 8.8125rem;
+  height: 3rem;
+  font: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.none {
+  color: var(--job-header);
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+  .job h2:hover {
+    color: var(--job-info);
+  }
+  .load button:hover {
+    background-color: var(--clr-lviolet);
+  }
+}

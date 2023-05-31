@@ -1,0 +1,74 @@
+.header {
+  background-image: url("/assets/mobile/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  background-position: contain;
+  padding: 2rem 1.5rem 4.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  /* height: fit-content; */
+  line-height: 2rem;
+}
+
+.header h1 > img {
+  vertical-align: bottom;
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* toggle start */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.4375rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 2.125rem;
+  background-color: var(--clr-white);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: var(--clr-violet);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .toggle:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+/* toggle end */

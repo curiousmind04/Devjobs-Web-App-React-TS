@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 :root {
-  --clr-violet: hsl(27, 22%, 51%);
-  --clr-lviolet: hsl(235, 82%, 77%);
   --clr-vdblue: hsl(219, 29%, 14%);
   --clr-midnight: hsl(220, 29%, 10%);
-  --clr-white: hsl(0, 0%, 100%);
   --clr-lgrey: hsl(210, 22%, 96%);
   --clr-grey: hsl(212, 23%, 69%);
   --clr-dgrey: hsl(214, 17%, 51%);
+
+  --clr-violet: hsl(235, 69%, 61%);
+  --clr-lviolet: hsl(235, 82%, 77%);
+  --clr-white: hsl(0, 0%, 100%);
+  --background: hsl(210, 22%, 96%);
+  --secondary-bg: hsl(0, 0%, 100%);
+  --job-header: hsl(219, 29%, 14%);
+  --filter: brightness(0) saturate(100%) invert(49%) sepia(32%) saturate(299%)
+    hue-rotate(174deg) brightness(94%) contrast(87%);
+  --search: hsl(219, 29%, 14%);
+  --search-ph: hsla(219, 29%, 14%, 0.5);
+  --job-info: hsl(214, 17%, 51%);
+  --modal-label: hsl(219, 29%, 14%);
+  --checkbox-unchecked: hsla(219, 29%, 14%, 0.1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,14 +28,48 @@
   -webkit-text-size-adjust: 100%;
 }
 
+[data-theme="dark"] {
+  --clr-violet: hsl(235, 69%, 61%);
+  --clr-lviolet: hsl(235, 82%, 77%);
+  --clr-white: hsl(0, 0%, 100%);
+  --background: hsl(220, 29%, 10%);
+  --secondary-bg: hsl(219, 29%, 14%);
+  --job-header: hsl(0, 0%, 100%);
+  --filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(29%)
+    hue-rotate(129deg) brightness(107%) contrast(107%);
+  --search: hsl(0, 0%, 100%);
+  --search-ph: hsla(0, 0%, 100%, 0.5);
+  --job-info: hsl(214, 17%, 51%);
+  --modal-label: hsl(0, 0%, 100%);
+  --checkbox-unchecked: hsla(0, 0%, 100%, 0.1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+.app {
+  background-color: var(--background);
   min-height: 100vh;
 }
 
