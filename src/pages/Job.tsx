@@ -30,31 +30,43 @@ const JobPage: React.FC<Props> = ({ jobs }) => {
               >
                 <img src={job.logo} alt="job logo" />
               </div>
-              <h2>{job.company}</h2>
-              <span>
-                {`${job.company.toLowerCase().replace(/\s+/g, "")}.com`}
-              </span>
-              <a href="https://www.linkedin.com/in/brandon-bhangari/">
-                Company Site
-              </a>
+              <div className={classes.right}>
+                <div>
+                  <h2>{job.company}</h2>
+                  <span>
+                    {`${job.company.toLowerCase().replace(/\s+/g, "")}.com`}
+                  </span>
+                </div>
+                <a href="https://www.linkedin.com/in/brandon-bhangari/">
+                  Company Site
+                </a>
+              </div>
             </div>
             <div className={classes.info}>
               <div>
-                <span className={classes.postedAt}>{job.postedAt}</span>
-                <div className={classes.dot}></div>
-                <span className={classes.contract}>{job.contract}</span>
+                <div>
+                  <div className={classes.details}>
+                    <span className={classes.postedAt}>{job.postedAt}</span>
+                    <div className={classes.dot}></div>
+                    <span className={classes.contract}>{job.contract}</span>
+                  </div>
+                  <h3>{job.position}</h3>
+                  <span className={classes.location}>{job.location}</span>
+                </div>
+                <a href="https://www.linkedin.com/in/brandon-bhangari/">
+                  Apply Now
+                </a>
               </div>
-              <h3>{job.position}</h3>
-              <span className={classes.location}>{job.location}</span>
-              <a href="https://www.linkedin.com/in/brandon-bhangari/">
-                Apply Now
-              </a>
+
               <p className={classes.description}>{job.description}</p>
               <div className={classes.requirements}>
                 <h3>Requirements</h3>
                 <p>{job.requirements.content}</p>
                 {job.requirements.items.map((item) => (
-                  <div className={classes.item}>
+                  <div
+                    className={classes.item}
+                    key={job.requirements.items.indexOf(item)}
+                  >
                     <div>
                       <div className={classes.dot}></div>
                     </div>
@@ -66,7 +78,10 @@ const JobPage: React.FC<Props> = ({ jobs }) => {
                 <h3>What You Will Do</h3>
                 <p>{job.role.content}</p>
                 {job.role.items.map((item) => (
-                  <div className={classes.item}>
+                  <div
+                    className={classes.item}
+                    key={job.role.items.indexOf(item)}
+                  >
                     <div className={classes.num}>
                       {job.role.items.indexOf(item) + 1}
                     </div>
@@ -77,6 +92,10 @@ const JobPage: React.FC<Props> = ({ jobs }) => {
             </div>
           </div>
           <div className={classes.bottom}>
+            <div className={classes.bottomInfo}>
+              <h3>{job.position}</h3>
+              <span>So Digital Inc.</span>
+            </div>
             <a href="https://www.linkedin.com/in/brandon-bhangari/">
               Apply Now
             </a>
