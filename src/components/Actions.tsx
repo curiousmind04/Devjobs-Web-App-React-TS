@@ -74,8 +74,13 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
     if (jobs && titleInput.length > 0) {
       if (!checked && locationInput.length === 0) {
         filterJobs(
-          jobs.filter((job) =>
-            job.position.toLowerCase().replace(/\s+/g, "").includes(titleInput)
+          jobs.filter(
+            (job) =>
+              job.position
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput) ||
+              job.company.toLowerCase().replace(/\s+/g, "").includes(titleInput)
           )
         );
       }
@@ -83,11 +88,22 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
       if (!checked && locationInput.length > 0) {
         filteredJobs = jobs.filter(
           (job) =>
-            job.location
+            (job.location
               .toLowerCase()
               .replace(/\s+/g, "")
               .includes(locationInput) &&
-            job.position.toLowerCase().replace(/\s+/g, "").includes(titleInput)
+              job.position
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput)) ||
+            (job.location
+              .toLowerCase()
+              .replace(/\s+/g, "")
+              .includes(locationInput) &&
+              job.company
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput))
         );
         filterJobs(filteredJobs);
       }
@@ -95,8 +111,16 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
       if (checked && locationInput.length === 0) {
         filteredJobs = jobs.filter(
           (job) =>
-            job.contract === "Full Time" &&
-            job.position.toLowerCase().replace(/\s+/g, "").includes(titleInput)
+            (job.contract === "Full Time" &&
+              job.position
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput)) ||
+            (job.contract === "Full Time" &&
+              job.company
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput))
         );
         filterJobs(filteredJobs);
       }
@@ -104,12 +128,24 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
       if (checked && locationInput.length > 0) {
         filteredJobs = jobs.filter(
           (job) =>
-            job.contract === "Full Time" &&
-            job.location
-              .toLowerCase()
-              .replace(/\s+/g, "")
-              .includes(locationInput) &&
-            job.position.toLowerCase().replace(/\s+/g, "").includes(titleInput)
+            (job.contract === "Full Time" &&
+              job.location
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(locationInput) &&
+              job.position
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput)) ||
+            (job.contract === "Full Time" &&
+              job.location
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(locationInput) &&
+              job.company
+                .toLowerCase()
+                .replace(/\s+/g, "")
+                .includes(titleInput))
         );
         filterJobs(filteredJobs);
       }
@@ -145,7 +181,7 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
           {document.querySelector(".app")
             ? createPortal(
                 <div
-                  className={classes.overlay}
+                  className={classes.backdrop}
                   onClick={modalHandler}
                   hidden={!modal}
                 ></div>,
@@ -177,7 +213,12 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
                   alt="checkmark icon"
                 />
               </label>
-              <label htmlFor="check">Full Time Only</label>
+              <label htmlFor="check" className={classes.labelOne}>
+                Full Time Only
+              </label>
+              <label htmlFor="check" className={classes.labelTwo}>
+                Full Time
+              </label>
             </div>
             <button
               type="submit"

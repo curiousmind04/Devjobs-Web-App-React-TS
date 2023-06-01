@@ -60,7 +60,9 @@ const HomePage = () => {
         ))}
       {load === 12 && filteredJobs && filteredJobs.length > 12 && (
         <div className={classes.load}>
-          <button onClick={() => setLoad(15)}>Load More</button>
+          <button onClick={() => setLoad(filteredJobs.length)}>
+            Load More
+          </button>
         </div>
       )}
     </div>

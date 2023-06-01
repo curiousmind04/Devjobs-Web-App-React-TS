@@ -1,15 +1,20 @@
 .header {
   background-image: url("/assets/mobile/bg-pattern-header.svg");
   background-repeat: no-repeat;
-  background-position: contain;
+  background-size: cover;
   padding: 2rem 1.5rem 4.5rem 1.5rem;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header h1 {
-  /* height: fit-content; */
   line-height: 2rem;
 }
 
@@ -72,3 +77,39 @@ input:checked + .toggle:before {
 }
 
 /* toggle end */
+
+@media (hover: hover) {
+  .toggle:hover:before {
+    background-color: var(--clr-lviolet);
+  }
+}
+
+@media (max-width: 18.75rem) {
+  .header > div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .header {
+    background-image: url("/assets/tablet/bg-pattern-header.svg");
+    background-position: bottom;
+    padding: 2.625rem 2.5rem 5.375rem 2.5rem;
+  }
+  .header > div {
+    max-width: calc(1110px - 5rem);
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 78rem) {
+  .header {
+    background-image: url("/assets/desktop/bg-pattern-header.svg");
+    background-position: bottom left;
+    padding: 2.8125rem 0 5.3125rem 0;
+  }
+  .header > div {
+    max-width: 1110px;
+  }
+}

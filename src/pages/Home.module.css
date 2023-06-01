@@ -1,6 +1,5 @@
 .container {
   padding: 6.0625rem 1.5rem 3.875rem 1.5rem;
-  /* position: relative; */
 }
 
 .grid > :last-child {
@@ -8,8 +7,9 @@
 }
 
 .job {
+  /* min-width: 328px; */
   background-color: var(--secondary-bg);
-  padding: 3.0625rem 0.5625rem 2rem 2rem;
+  padding: 3.0625rem 0.5625rem 2.25rem 2rem;
   border-radius: 6px;
   margin-bottom: 3.0625rem;
   position: relative;
@@ -52,18 +52,23 @@
 .job h2 {
   color: var(--job-header);
   font-size: 1.25rem;
+  line-height: 1.25rem;
   margin-bottom: 17px;
   cursor: pointer;
 }
 
 .company {
   color: var(--job-info);
+  line-height: 1rem;
   display: block;
   margin-bottom: 2.75rem;
 }
 
 .location {
+  display: block;
   color: var(--clr-violet);
+  font-size: 14px;
+  line-height: 14px;
   font-weight: 700;
 }
 
@@ -84,10 +89,14 @@
   cursor: pointer;
 }
 
+/* needed to add margin bottom 13rem below otherwise the filter modal
+extends beyond the .app div when the screen height is very short */
+
 .none {
   color: var(--job-header);
   text-align: center;
   font-weight: 700;
+  margin-bottom: 13rem;
 }
 
 @media (hover: hover) {
@@ -96,5 +105,60 @@
   }
   .load button:hover {
     background-color: var(--clr-lviolet);
+  }
+}
+
+@media (max-width: 18.75rem) {
+  .container {
+    padding: 165px 1rem 3.875rem 1rem;
+  }
+  .job {
+    padding: 3.0625rem 1rem 2.25rem 1rem;
+  }
+  .job h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .job span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 23.5rem) {
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 3.0625rem;
+    flex-wrap: wrap;
+  }
+  .job {
+    width: 328px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 48rem) {
+  .container {
+    padding: 6.875rem 2.5rem 3.8125rem 2.5rem;
+  }
+  .grid {
+    row-gap: 4.0625rem;
+  }
+  .job {
+    width: 339px;
+  }
+}
+
+@media (min-width: 78rem) {
+  .container {
+    padding: 9.0625rem 0 6.5rem 0;
+  }
+  .grid {
+    column-gap: 30px;
+  }
+  .job {
+    width: 350px;
   }
 }
