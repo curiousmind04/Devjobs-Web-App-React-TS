@@ -1,0 +1,191 @@
+.top {
+  padding: 214px 1.5rem 64px 1.5rem;
+}
+
+.company {
+  background-color: var(--secondary-bg);
+  width: calc(100% - 3rem);
+  padding: 49px 0 2rem 0;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  top: 121px;
+}
+
+.logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1.5625rem;
+  left: calc(50% - 1.5625rem);
+  z-index: 1;
+}
+
+.company h2 {
+  color: var(--job-header);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-bottom: 13px;
+}
+
+.company span {
+  display: block;
+  color: var(--job-info);
+  line-height: 1rem;
+  margin-bottom: 27px;
+}
+
+.company a {
+  display: block;
+  background-color: var(--company-site-link-bg);
+  color: var(--company-site-link-text);
+  width: 147px;
+  height: 3rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-inline: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  background-color: var(--secondary-bg);
+  width: 100%;
+  border-radius: 6px;
+  padding: 2.5rem 1.5rem;
+}
+
+.info > :first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+
+.info > :first-child span {
+  color: var(--job-info);
+  line-height: 1rem;
+}
+
+.dot {
+  background-color: var(--job-info);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.info h3 {
+  color: var(--job-header);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.location {
+  display: block;
+  color: var(--clr-violet);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 54px;
+}
+
+.description {
+  color: var(--job-page-text);
+  line-height: 26px;
+  padding: 2rem 0 2.5rem 0;
+}
+
+.requirements {
+  padding-bottom: 2.5rem;
+}
+
+.requirements p,
+.role p {
+  color: var(--job-page-text);
+  line-height: 26px;
+}
+
+.requirements > p,
+.role > p {
+  padding: 28px 0 2rem 0;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 8px;
+}
+
+.item > div {
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.item .dot {
+  color: var(--clr-violet);
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.item .num {
+  color: var(--clr-violet);
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.bottom {
+  background-color: var(--secondary-bg);
+  padding: 1rem;
+}
+
+.info a,
+.bottom a {
+  display: block;
+  background-color: var(--clr-violet);
+  color: var(--clr-white);
+  width: 100%;
+  height: 3rem;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.none {
+  color: var(--job-header);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 214px;
+  padding-bottom: 8rem;
+}
+
+@media (hover: hover) {
+  .company a:hover {
+    background-color: var(--company-site-link-bg-hover);
+  }
+  .info a:hover,
+  .bottom a:hover {
+    background-color: var(--clr-lviolet);
+  }
+}

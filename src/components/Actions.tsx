@@ -235,36 +235,3 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
 };
 
 export default Actions;
-
-{
-  /* <div className={classes.container}>
-        <form className={classes.form} onSubmit={searchHandler}>
-          <label htmlFor="search" className="sr-only">
-            Search by title
-          </label>
-          <input
-            type="text"
-            id="search"
-            placeholder="Filter by title..."
-            ref={titleRef}
-          />
-          <button
-            type="button"
-            className={classes.filter}
-            onClick={modalHandler}
-          >
-            <span className="sr-only">Filter</span>
-            <img src="/assets/mobile/icon-filter.svg" alt="filter icon" />
-          </button>
-          <button type="submit" className={classes.searchBtn}>
-            <span className="sr-only">Search</span>
-            <img src="assets/desktop/icon-search.svg" alt="search icon" />
-          </button>
-        </form>
-      </div>
-      <Modal
-        modalHandler={modalHandler}
-        searchHandler={searchHandler}
-        hidden={modal ? false : true}
-      /> */
-}

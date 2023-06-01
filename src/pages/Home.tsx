@@ -3,28 +3,23 @@ import { Job } from "myTypes";
 
 import Actions from "../components/Actions";
 import classes from "./Home.module.css";
+import { Link } from "react-router-dom";
 
-const HomePage = () => {
-  const [jobs, setJobs] = useState<Job[]>();
+type Props = {
+  jobs: Job[] | undefined;
+};
+
+const HomePage: React.FC<Props> = ({ jobs }) => {
   const [filteredJobs, setFilteredJobs] = useState<Job[]>();
   const [load, setLoad] = useState<number>(12);
 
+  // console.log(filteredJobs);
+
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("data.json");
-      if (!response.ok) {
-        console.log("error");
-        return;
-      }
-      const data = await response.json();
-
-      setJobs(data);
-      setFilteredJobs(data);
-    };
-    fetchData();
-  }, []);
-
-  //   console.log(jobs);
+    if (jobs) {
+      setFilteredJobs(jobs);
+    }
+  }, [jobs]);
 
   const filterJobs = (filteredJobs: Job[]) => {
     setFilteredJobs(filteredJobs);
@@ -48,7 +43,9 @@ const HomePage = () => {
                 <div className={classes.dot}></div>
                 <span className={classes.contract}>{job.contract}</span>
               </div>
-              <h2>{job.position}</h2>
+              <Link to={job.id.toString()}>
+                <h2>{job.position}</h2>
+              </Link>
               <span className={classes.company}>{job.company}</span>
               <span className={classes.location}>{job.location}</span>
             </div>

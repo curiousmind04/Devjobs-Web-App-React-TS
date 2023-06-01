@@ -20,6 +20,10 @@
   --job-info: hsl(214, 17%, 51%);
   --modal-label: hsl(219, 29%, 14%);
   --checkbox-unchecked: hsla(219, 29%, 14%, 0.1);
+  --company-site-link-bg: hsla(235, 69%, 61%, 0.1);
+  --company-site-link-bg-hover: hsla(235, 69%, 61%, 0.35);
+  --company-site-link-text: hsl(235, 69%, 61%);
+  --job-page-text: hsl(214, 17%, 51%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,6 +46,10 @@
   --job-info: hsl(214, 17%, 51%);
   --modal-label: hsl(0, 0%, 100%);
   --checkbox-unchecked: hsla(0, 0%, 100%, 0.1);
+  --company-site-link-bg: hsla(0, 0%, 100%, 0.1);
+  --company-site-link-bg-hover: hsla(0, 0%, 100%, 0.25);
+  --company-site-link-text: hsl(0, 0%, 100%);
+  --job-page-text: hsl(212, 23%, 69%);
 }
 
 * {

@@ -16,6 +16,7 @@
 
 .header h1 {
   line-height: 2rem;
+  cursor: pointer;
 }
 
 .header h1 > img {
