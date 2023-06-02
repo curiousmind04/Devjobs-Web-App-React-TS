@@ -145,6 +145,8 @@ extends beyond the .app div when the screen height is very short */
 
 @media (min-width: 48rem) {
   .container {
+    max-width: 69.375rem;
+    margin-inline: auto;
     padding: 6.875rem 2.5rem 3.8125rem 2.5rem;
   }
   .grid {

@@ -3,9 +3,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem 1.5rem 4.5rem 1.5rem;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 
 .header > div {
@@ -112,5 +109,26 @@ input:checked + .toggle:before {
   }
   .header > div {
     max-width: 1110px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 21px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: var(--clr-violet);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(-17px);
+    -ms-transform: translateX(-17px);
+    transform: translateX(-17px);
   }
 }

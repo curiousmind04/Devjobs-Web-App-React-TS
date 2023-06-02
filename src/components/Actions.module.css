@@ -247,6 +247,9 @@ from changing when using Chrome autocomplete */
   .form > input {
     width: 100%;
   }
+  .modal {
+    top: 5rem;
+  }
   .location {
     padding: 1rem;
   }

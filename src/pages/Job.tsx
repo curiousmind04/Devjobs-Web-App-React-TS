@@ -92,13 +92,15 @@ const JobPage: React.FC<Props> = ({ jobs }) => {
             </div>
           </div>
           <div className={classes.bottom}>
-            <div className={classes.bottomInfo}>
-              <h3>{job.position}</h3>
-              <span>So Digital Inc.</span>
+            <div>
+              <div className={classes.bottomInfo}>
+                <h3>{job.position}</h3>
+                <span>So Digital Inc.</span>
+              </div>
+              <a href="https://www.linkedin.com/in/brandon-bhangari/">
+                Apply Now
+              </a>
             </div>
-            <a href="https://www.linkedin.com/in/brandon-bhangari/">
-              Apply Now
-            </a>
           </div>
         </div>
       )}

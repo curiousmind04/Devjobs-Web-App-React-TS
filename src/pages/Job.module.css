@@ -203,9 +203,34 @@
   }
 }
 
+@media (max-width: 20rem) {
+  .info {
+    padding: 1.5rem 1rem;
+  }
+  .info span {
+    font-size: 14px;
+  }
+  .info h3 {
+    font-size: 1rem;
+  }
+  .description,
+  .requirements p,
+  .role p,
+  .item .num {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .item {
+    gap: 1rem;
+  }
+  .item > div {
+    height: 20px;
+  }
+}
+
 @media (min-width: 48rem) {
   .top {
-    max-width: 730px;
+    max-width: calc(730px + 5rem);
     padding: 132px 2.5rem 53px 2.5rem;
   }
   .company {
@@ -261,6 +286,7 @@
     line-height: 28px;
   }
   .location {
+    margin-top: 14px;
     margin-bottom: 0;
   }
   .info a {
@@ -275,6 +301,10 @@
   }
   .bottom {
     padding: 23px 2.5rem 22px;
+  }
+  .bottom > div {
+    max-width: 730px;
+    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,9 +334,17 @@
 
 @media (min-width: 78rem) {
   .top {
-    padding: 132px 0 53px 0;
+    max-width: 730px;
+    padding: 131px 0 80px 0;
   }
   .company {
     width: 100%;
+    top: -41px;
+  }
+  .info {
+    padding: 48px 43px 48px 48px;
+  }
+  .requirements {
+    padding-bottom: 3rem;
   }
 }
