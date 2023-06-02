@@ -96,7 +96,7 @@ input:checked + .toggle:before {
     padding: 2.625rem 2.5rem 5.375rem 2.5rem;
   }
   .header > div {
-    max-width: calc(1110px - 5rem);
+    max-width: calc(69.375rem - 5rem);
     margin-inline: auto;
   }
 }
@@ -108,7 +108,7 @@ input:checked + .toggle:before {
     padding: 2.8125rem 0 5.3125rem 0;
   }
   .header > div {
-    max-width: 1110px;
+    max-width: 69.375rem;
   }
 }
 

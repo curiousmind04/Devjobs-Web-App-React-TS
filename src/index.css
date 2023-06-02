@@ -81,25 +81,3 @@ body {
     margin-inline: auto;
   }
 } */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --clr-violet: hsl(235, 69%, 61%);
-    --clr-lviolet: hsl(235, 82%, 77%);
-    --clr-white: hsl(0, 0%, 100%);
-    --background: hsl(220, 29%, 10%);
-    --secondary-bg: hsl(219, 29%, 14%);
-    --job-header: hsl(0, 0%, 100%);
-    --filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(29%)
-      hue-rotate(129deg) brightness(107%) contrast(107%);
-    --search: hsl(0, 0%, 100%);
-    --search-ph: hsla(0, 0%, 100%, 0.5);
-    --job-info: hsl(214, 17%, 51%);
-    --modal-label: hsl(0, 0%, 100%);
-    --checkbox-unchecked: hsla(0, 0%, 100%, 0.1);
-    --company-site-link-bg: hsla(0, 0%, 100%, 0.1);
-    --company-site-link-bg-hover: hsla(0, 0%, 100%, 0.25);
-    --company-site-link-text: hsl(0, 0%, 100%);
-    --job-page-text: hsl(212, 23%, 69%);
-  }
-} */

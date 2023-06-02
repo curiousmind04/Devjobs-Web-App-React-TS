@@ -1,25 +1,25 @@
 .top {
   max-width: 30rem;
   margin-inline: auto;
-  padding: 214px 1.5rem 64px 1.5rem;
+  padding: 13.375rem 1.5rem 4rem 1.5rem;
   position: relative;
 }
 
 .company {
   background-color: var(--secondary-bg);
   width: calc(100% - 3rem);
-  padding: 49px 0 2rem 0;
+  padding: 3.0625rem 0 2rem 0;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   position: absolute;
-  top: -15px;
+  top: -0.9375rem;
   /* top: 121px; */
 }
 
 .logo {
   width: 3.125rem;
   height: 3.125rem;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,27 +33,27 @@
   color: var(--job-header);
   font-size: 1.25rem;
   line-height: 1.25rem;
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
 }
 
 .company span {
   display: block;
   color: var(--job-info);
   line-height: 1rem;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 .company a {
   display: block;
   background-color: var(--company-site-link-bg);
   color: var(--company-site-link-text);
-  width: 147px;
+  width: 9.1875rem;
   height: 3rem;
   font: inherit;
   font-weight: 700;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   margin-inline: auto;
   cursor: pointer;
   display: flex;
@@ -64,7 +64,7 @@
 .info {
   background-color: var(--secondary-bg);
   width: 100%;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   padding: 2.5rem 1.5rem;
 }
 
@@ -72,8 +72,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 12px;
-  margin-bottom: 11px;
+  gap: 0.75rem;
+  margin-bottom: 0.6875rem;
 }
 
 .details span {
@@ -98,16 +98,16 @@
 .location {
   display: block;
   color: var(--clr-violet);
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
   font-weight: 700;
-  margin-top: 12px;
-  margin-bottom: 54px;
+  margin-top: 0.75rem;
+  margin-bottom: 3.375rem;
 }
 
 .description {
   color: var(--job-page-text);
-  line-height: 26px;
+  line-height: 1.625rem;
   padding: 2rem 0 2.5rem 0;
 }
 
@@ -118,12 +118,12 @@
 .requirements p,
 .role p {
   color: var(--job-page-text);
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .requirements > p,
 .role > p {
-  padding: 28px 0 2rem 0;
+  padding: 1.75rem 0 2rem 0;
 }
 
 .item {
@@ -131,11 +131,11 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .item > div {
-  height: 26px;
+  height: 1.625rem;
   display: flex;
   align-items: center;
 }
@@ -150,7 +150,7 @@
 .item .num {
   color: var(--clr-violet);
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 
 .bottom {
@@ -169,7 +169,7 @@
   font-weight: 700;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -177,7 +177,7 @@
 }
 
 .bottom a {
-  max-width: 344px;
+  max-width: 21.5rem;
   margin-inline: auto;
 }
 
@@ -189,7 +189,7 @@
   color: var(--job-header);
   text-align: center;
   font-weight: 700;
-  padding-top: 214px;
+  padding-top: 13.375rem;
   padding-bottom: 8rem;
 }
 
@@ -208,7 +208,7 @@
     padding: 1.5rem 1rem;
   }
   .info span {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .info h3 {
     font-size: 1rem;
@@ -217,37 +217,37 @@
   .requirements p,
   .role p,
   .item .num {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
   .item {
     gap: 1rem;
   }
   .item > div {
-    height: 20px;
+    height: 1.25rem;
   }
 }
 
 @media (min-width: 48rem) {
   .top {
-    max-width: calc(730px + 5rem);
-    padding: 132px 2.5rem 53px 2.5rem;
+    max-width: calc(45.625rem + 5rem);
+    padding: 8.25rem 2.5rem 3.3125rem 2.5rem;
   }
   .company {
     width: calc(100% - 5rem);
     padding: 0;
     text-align: left;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     border-top-left-radius: none;
-    top: -40px;
+    top: -2.5rem;
     display: flex;
     justify-content: flex-start;
   }
   .logo {
-    width: 140px;
-    height: 140px;
+    width: 8.75rem;
+    height: 8.75rem;
     border-radius: 0;
-    border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 0.375rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,11 +255,11 @@
     flex-shrink: 0;
   }
   .logo > img {
-    width: 81px;
+    width: 5.0625rem;
   }
   .right {
     width: 100%;
-    padding: 42px 2.5rem 0 2.5rem;
+    padding: 2.625rem 2.5rem 0 2.5rem;
     display: flex;
     justify-content: space-between;
   }
@@ -274,7 +274,7 @@
     margin-bottom: 0;
   }
   .info {
-    padding: 48px;
+    padding: 3rem;
   }
   .info > :first-child {
     display: flex;
@@ -282,35 +282,35 @@
     align-items: center;
   }
   .info > :first-child h3 {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
   }
   .location {
-    margin-top: 14px;
+    margin-top: 0.875rem;
     margin-bottom: 0;
   }
   .info a {
-    width: 141px;
+    width: 8.8125rem;
   }
   .description {
     padding: 2.5rem 0 2.5rem 0;
   }
   .requirements > p,
   .role > p {
-    padding: 28px 0 1.5rem 0;
+    padding: 1.75rem 0 1.5rem 0;
   }
   .bottom {
-    padding: 23px 2.5rem 22px;
+    padding: 1.4375rem 2.5rem 1.375rem;
   }
   .bottom > div {
-    max-width: 730px;
+    max-width: 45.625rem;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .bottom a {
-    width: 141px;
+    width: 8.8125rem;
     margin-inline: 0;
   }
   .bottomInfo {
@@ -320,7 +320,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 12px;
+    gap: 0.75rem;
   }
   .bottomInfo h3 {
     color: var(--job-header);
@@ -334,15 +334,15 @@
 
 @media (min-width: 78rem) {
   .top {
-    max-width: 730px;
-    padding: 131px 0 80px 0;
+    max-width: 45.625rem;
+    padding: 8.1875rem 0 5rem 0;
   }
   .company {
     width: 100%;
-    top: -41px;
+    top: -2.5625rem;
   }
   .info {
-    padding: 48px 43px 48px 48px;
+    padding: 3rem 2.6875rem 3rem 3rem;
   }
   .requirements {
     padding-bottom: 3rem;
