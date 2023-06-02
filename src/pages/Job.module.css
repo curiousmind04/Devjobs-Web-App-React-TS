@@ -149,8 +149,11 @@
 
 .item .num {
   color: var(--clr-violet);
+  min-width: 0.75rem;
   font-weight: 700;
   line-height: 1.625rem;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom {
