@@ -17,8 +17,11 @@ const Header: React.FC<Props> = ({ themeHandler }) => {
         </NavLink>
         <div className={classes.theme}>
           <img src="/assets/desktop/icon-sun.svg" alt="sun icon" />
+          <label htmlFor="theme" className="sr-only">
+            Theme Toggle
+          </label>
           <label className={classes.switch}>
-            <input type="checkbox" onClick={themeHandler} />
+            <input type="checkbox" id="theme" onClick={themeHandler} />
             <span className={classes.toggle}></span>
           </label>
           <img src="/assets/desktop/icon-moon.svg" alt="moon icon" />

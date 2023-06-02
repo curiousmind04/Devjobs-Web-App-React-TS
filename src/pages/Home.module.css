@@ -155,6 +155,9 @@ extends beyond the .app div when the screen height is very short */
   .job {
     width: 21.1875rem;
   }
+  .load {
+    margin-top: 3.5rem;
+  }
 }
 
 @media (min-width: 78rem) {

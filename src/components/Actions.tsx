@@ -156,15 +156,23 @@ const Actions: React.FC<Props> = ({ filterJobs, jobs }) => {
     <>
       <div className={classes.container}>
         <form className={classes.form} onSubmit={searchHandler}>
-          <label htmlFor="search" className="sr-only">
-            Search by title
-          </label>
-          <input
-            type="text"
-            id="search"
-            placeholder="Filter by title..."
-            ref={titleRef}
-          />
+          <div>
+            <img
+              src="assets/desktop/icon-search.svg"
+              alt="search icon"
+              className={classes.searchIcon}
+            />
+            <label htmlFor="search" className="sr-only">
+              Search by title
+            </label>
+            <input
+              type="text"
+              id="search"
+              className={classes.filterInput}
+              placeholder="Filter by title..."
+              ref={titleRef}
+            />
+          </div>
           <button
             type="button"
             className={classes.filter}
